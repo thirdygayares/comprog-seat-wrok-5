@@ -65,152 +65,22 @@ class Trees {
   
   
   	static void firstFit() {
-  		
-  		int temp = 0;
-  		 
-  		
+  		 			 
   		//transferring process array to haveStatus Array
-  	
-  		if(processSize[0] <= addressSize[0] && haveStatusArray[0] == 0) {
-  			firstfitArray[0] = addressSize[0];
-  			haveStatusArray[0]= 1;
-//  			System.out.println("asp");
-//  			System.out.println(processSize[0]);
-//  			System.out.println(firstfitArray[0]);
-//  			System.out.println(addressSize[0]);
-  		} else if(processSize[0] <= addressSize[1] && haveStatusArray[1] == 0 ) {
-  			firstfitArray[0] = addressSize[1];
-  			haveStatusArray[1]= 1;
-  			System.out.println("ddfp");
-  		}  else if(processSize[0] <= addressSize[2]  && haveStatusArray[2] == 0 ) {
-  			firstfitArray[0] = addressSize[2];
-  			haveStatusArray[2]= 1;
-  		}  else if(processSize[0] <= addressSize[3]  && haveStatusArray[3] == 0 ) {
-  			firstfitArray[0] = addressSize[3];
-  			haveStatusArray[3]= 1;
-  		} else if(processSize[0] <= addressSize[4]  && haveStatusArray[4] == 0 ) {
-  			firstfitArray[0] = addressSize[4];
-  			haveStatusArray[4]= 1;
-  		} else if(processSize[0] <= addressSize[5]  && haveStatusArray[5] == 0 ) {
-  			firstfitArray[0] = addressSize[5];
-  			haveStatusArray[5]= 1;
-  		} 
   		
   		
- 		if(processSize[1] <= addressSize[0] && haveStatusArray[0] == 0)  {
-  			firstfitArray[1] = addressSize[0];
-  			haveStatusArray[0]= 1;
-//  			System.out.println("asp");
-//  			System.out.println(processSize[0]);
-//  			System.out.println(firstfitArray[0]);
-//  			System.out.println(addressSize[0]);
-  		} else if(processSize[1] <= addressSize[1] && haveStatusArray[1] == 0) {
-  			firstfitArray[1] = addressSize[1];
-  			haveStatusArray[1]= 1;
-  			System.out.println("ddfp");
-  		}  else if(processSize[1] <= addressSize[2] && haveStatusArray[2] == 0) {
-  			firstfitArray[1] = addressSize[2];
-  			haveStatusArray[2]= 1;
-  		}  else if(processSize[1] <= addressSize[3] && haveStatusArray[3] == 0) {
-  			firstfitArray[1] = addressSize[3];
-  			haveStatusArray[3]= 1;
-  		} else if(processSize[1] <= addressSize[4] && haveStatusArray[4] == 0) {
-  			firstfitArray[1] = addressSize[4];
-  			haveStatusArray[4]= 1;
-  		} else if(processSize[1] <= addressSize[5] && haveStatusArray[5] == 0) {
-  			firstfitArray[1] = addressSize[5];
-  			haveStatusArray[5]= 1;
-  		} 
-  		
-		if(processSize[2] <= addressSize[0] && haveStatusArray[0] == 0) {
-  			firstfitArray[2] = addressSize[0];
-  			haveStatusArray[0]= 1;
-//  			System.out.println("asp");
-//  			System.out.println(processSize[0]);
-//  			System.out.println(firstfitArray[0]);
-//  			System.out.println(addressSize[0]);
-  		} else if(processSize[2] <= addressSize[1] && haveStatusArray[1] == 0) {
-  			firstfitArray[2] = addressSize[1];
-  			haveStatusArray[1]= 1;
-  			System.out.println("ddfp");
-  		}  else if(processSize[2] <= addressSize[2] && haveStatusArray[2] == 0) {
-  			firstfitArray[2] = addressSize[2];
-  			haveStatusArray[2]= 1;
-  		}  else if(processSize[2] <= addressSize[3] && haveStatusArray[3] == 0) {
-  			firstfitArray[2] = addressSize[3];
-  			haveStatusArray[3]= 1;
-  		} else if(processSize[2] <= addressSize[4] && haveStatusArray[4] == 0) {
-  			firstfitArray[2] = addressSize[4];
-  			haveStatusArray[4]= 1;
-  		} else if(processSize[2] <= addressSize[5] && haveStatusArray[5] == 0) {
-  			firstfitArray[2] = addressSize[5];
-  			haveStatusArray[5]= 1;
-  		} 
-  		
-
-		if(processSize[3] <= addressSize[0] && haveStatusArray[0] == 0) {
-  			firstfitArray[3] = addressSize[0];
-  			haveStatusArray[0]= 1;
-//  			System.out.println("asp");
-//  			System.out.println(processSize[0]);
-//  			System.out.println(firstfitArray[0]);
-//  			System.out.println(addressSize[0]);
-  		} else if(processSize[3] <= addressSize[1] && haveStatusArray[1] == 0) {
-  			firstfitArray[3] = addressSize[1];
-  			haveStatusArray[1]= 1;
-  			System.out.println("ddfp");
-  		}  else if(processSize[3] <= addressSize[2] && haveStatusArray[2] == 0) {
-  			firstfitArray[3] = addressSize[2];
-  			haveStatusArray[2]= 1;
-  		}  else if(processSize[3] <= addressSize[3] && haveStatusArray[3] == 0) {
-  			firstfitArray[3] = addressSize[3];
-  			haveStatusArray[3]= 1;
-  		} else if(processSize[3] <= addressSize[4] && haveStatusArray[4] == 0) {
-  			firstfitArray[3] = addressSize[4];
-  			haveStatusArray[4]= 1;
-  		} else if(processSize[3] <= addressSize[5] && haveStatusArray[5] == 0) {
-  			firstfitArray[3] = addressSize[5];
-  			haveStatusArray[5]= 1;
-  		} 
-  		
-  		
-  		
-  		
-  		
-  		
-//  	   for(int firstfitCondition = 0; firstfitCondition<6; firstfitCondition++){
-//  		   	
-//  		   	if(processSize[firstfitCondition] >= addressSize[firstfitCondition] && haveStatusArray[firstfitCondition]==0) {
-//  		   			temp = addressSize[firstfitCondition];
-//  		   			haveStatusArray[firstfitCondition]=1;
-//  		   			System.out.println("first" + firstfitCondition);
-//  		   	} else if (processSize[firstfitCondition] >= addressSize[firstfitCondition+1] && haveStatusArray[firstfitCondition]==0) {
-//  		   		
-//  		   	}
-//  		   	
-//  		  firstfitArray[firstfitCondition] = temp;  
-//  	   }
-//  	   
-//  	   //testing
-//  	  System.out.println("status");
-//  	 for(int i = 0; i<6; i++){
-//	  System.out.print(haveStatusArray[i] + " ");
-//	    }  
-//  	   
-  	   
-  	   
-  	   
-  	   
-//  	   	if(processSize[0] >= addressSize[0]) {
-//  	   		bestfit[0] =  addressSize[0];
-//  	   	
-//  	    }else if (processSize[1] >= addressSize[0]) {
-//  	    	
-//  	    }
-  	   
+  		for(int x = 0; x<4; x++) {
+  			
+  			for(int j = 0; j<6; j++) {
+  				if(processSize[x] <= addressSize[j] && haveStatusArray[j] == 0) {
+  		  			firstfitArray[x] = addressSize[j];
+  		  			haveStatusArray[j]= 1;
+  		  			System.out.println("tetx: "  + processSize[x]);
+  		  		} 
+  			}
+  			
+  		}  	   
   	}
   
-  	
-  
-  
+    
 }
