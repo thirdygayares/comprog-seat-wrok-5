@@ -94,15 +94,7 @@ class Trees {
       }
     }
 
-    //testing
-    System.out.println("======For testing Purpose========");
-    for (int h = 0; h < addressSize.length; h++) {
-      for (int x = 0; x < addressSize[h].length; x++) {
-        System.out.print(addressSize[h][x] + " ");
-      }
-      System.out.println();
-    }
-    System.out.println("======End For testing Purpose========"); //end for testing
+  
 
     //para mailagay na sa bestFit array natin
     for (int x = 0; x < 4; x++) {
@@ -128,7 +120,7 @@ class Trees {
     }
 
     //printing the result of best fit algorithm
-    System.out.println("\nBest Fit Algorithm\n");
+    System.out.println("\n\nBest Fit Algorithm\n");
     for (int ffAlgorithm = 0; ffAlgorithm < 4; ffAlgorithm++) {
       System.out.println("PROCESS " + (ffAlgorithm + 1) + " TO ADDRESS SIZE " + bestfitArray[ffAlgorithm]);
     }
@@ -161,16 +153,6 @@ class Trees {
       }
     }
 
-    //testing
-    System.out.println("======For testing Purpose========");
-    for (int h = 0; h < addressSize.length; h++) {
-      for (int x = 0; x < addressSize[h].length; x++) {
-        System.out.print(addressSize[h][x] + " ");
-      }
-      System.out.println();
-    }
-    System.out.println("======End For testing Purpose========"); //end for testing
-
     //para mailagay na sa worstFit array natin
     for (int x = 0; x < 4; x++) {
       if (processSize[x] <= addressSize[1][0] && haveStatusArray[0] != 3) {
@@ -195,7 +177,7 @@ class Trees {
     }
 
     //printing the result of worst fit algorithm
-    System.out.println("\n Worst Fit Algorithm\n");
+    System.out.println("\n\nWorst Fit Algorithm\n");
     for (int ffAlgorithm = 0; ffAlgorithm < 4; ffAlgorithm++) {
       System.out.println("PROCESS " + (ffAlgorithm + 1) + " TO ADDRESS SIZE " + worstfitArray[ffAlgorithm]);
     }
